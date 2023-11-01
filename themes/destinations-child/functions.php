@@ -24,3 +24,5 @@ function destinations_child_scripts() {
     wp_enqueue_style( 'destinations-child', get_stylesheet_uri(), array('destinations-child-style'), wp_get_theme()->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'destinations_child_scripts' );
+
+define( 'DISALLOW_FILE_EDIT', true ); define( 'DISALLOW_FILE_MODS', true );
